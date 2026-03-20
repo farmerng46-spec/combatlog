@@ -3,7 +3,7 @@ combat-log:
   # Core settings
   # =========================
   timer:
-    duration-seconds: 15                 # Combat timer duration
+    duration-seconds: 20                 # Combat timer duration
     display: actionbar                   # actionbar | bossbar
 
   restrictions:
