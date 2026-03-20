@@ -66,7 +66,7 @@ combat-log:
     riptide-denied: "&cYou can't use riptide in combat"
 
     timer:
-      actionbar: "&c{timeLeft}/{maxTime}"
+      actionbar: "&7ᴄᴏᴍʙᴀᴛ: &a{timeLeft}"
 
 anti-kill-abuse:
   enabled: false
