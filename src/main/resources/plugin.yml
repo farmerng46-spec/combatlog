@@ -1,8 +1,7 @@
-name: CombatLog
+name: VigorCombatLog
 version: 1.14
 main: de.nikey.combatLog.CombatLog
 api-version: 1.21
-authors: [ Nikey ]
-website: https://github.com/NikeyV1
+authors: Vigor
 softdepend:
   - WorldGuard
