@@ -12,7 +12,7 @@ combat-log:
     teleporting:
       disabled-in-combat: false          # Disable any teleport while in combat
     mending:
-      disabled-in-combat: true
+      disabled-in-combat: false
     riptide:
       stop: false
       cooldown: 10000                    # riptide cooldown (sec * 100)
@@ -21,7 +21,7 @@ combat-log:
 
   punishment:
     damage: 5.0                          # Damage penalty for restricted actions (0 = off)
-    kill-on-logout: false                # Kill player if they log out in combat
+    kill-on-logout: true                # Kill player if they log out in combat
 
   # =========================
   # Special triggers
@@ -35,11 +35,18 @@ combat-log:
   # Exclusions / blocks
   # =========================
   ignored-worlds:
-    - "ffa"                              # Worlds where combat timer is ignored
+    - "spawn"                              # Worlds where combat timer is ignored
 
   blocked-commands:
     - "tpa"                              # Commands blocked during combat
-
+    - "rtp"
+    - "home"
+    - "homes"
+    - "tpahere"
+    - "tpaccept"
+    - "tpadeny"
+    - "spawn"
+    - "warp"
   # =========================
   # Combat zone
   # =========================
@@ -51,20 +58,18 @@ combat-log:
   # Messages
   # =========================
   messages:
-    combat-log: "&c{player} has combat logged!"
+    combat-log: "&c{player} ʜᴀꜱ ᴄᴏᴍʙᴀᴛ ʟᴏɢɢᴇᴅ!"
     elytra-use-denied: "&dYou can't use elytra in combat"
     teleporting-denied: "&dYou can't teleport in combat"
-    blocked-command: "&cYou can't use this command in combat"
+    blocked-command: "&cʏᴏᴜ ᴄᴀɴ’ᴛ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴄᴏᴍʙᴀᴛ"
     region-entry-denied: "&cYou can't enter this region in combat"
     riptide-denied: "&cYou can't use riptide in combat"
 
     timer:
       actionbar: "&c{timeLeft}/{maxTime}"
-      bossbar-title: "&cIn Combat: {timeLeft}s"
-
 
 anti-kill-abuse:
-  enabled: true
+  enabled: false
 
   limits:
     max-kills: 5                          # more than 5 kills = abuse
